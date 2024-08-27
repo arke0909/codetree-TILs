@@ -18,7 +18,6 @@ int main()
 			str1[i] = str1[i - 1];
 		}
 			str1[0] = c;
-			cout << str1 << endl;
 			cnt++;
 
 			if (cnt > 100)
