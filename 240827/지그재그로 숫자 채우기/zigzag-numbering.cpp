@@ -11,7 +11,6 @@ int main()
 
 	while (repeatCnt != sizeY)
 	{
-		cout << xx << cnt << repeatCnt << endl;
 		arr[cnt][repeatCnt] = xx++;
 		if (cnt == sizeX - 1 && repeatCnt % 2 == 0 || cnt == 0 && repeatCnt % 2 != 0)
 		{
