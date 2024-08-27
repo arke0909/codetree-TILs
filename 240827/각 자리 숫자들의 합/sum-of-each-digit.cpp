@@ -2,16 +2,18 @@
 #include <string>
 using namespace std;
 
-int main() {
-    // 여기에 코드를 작성string num;
-int result = 0;
-cin >> num;
-
-for (int i = 0; i < num.size(); i++)
+int main()
 {
-	result += num[i] - '0';
-}
+	string num;
+	int result = 0;
+	cin >> num;
 
-cout << result;
-    return 0;
+	for (int i = 0; i < num.size(); i++)
+	{
+		result += num[i] - '0';
+	}
+
+	cout << result;
+
+	return 0;
 }
