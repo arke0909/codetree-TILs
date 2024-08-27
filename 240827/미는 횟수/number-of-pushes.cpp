@@ -12,12 +12,13 @@ int main()
 
 	while (str1 != str2)
 	{
-			char c = str1[0];
-			for (int i = 0; i < str1.size(); i++)
+			char c = str1[str1.size() - 1];
+			for (int i = str1.size() - 1; i > 0; i--)
 		{
-			str1[i] = str1[i + 1];
+			str1[i] = str1[i - 1];
 		}
-			str1[str1.size() - 1] = c;
+			str1[0] = c;
+			cout << str1 << endl;
 			cnt++;
 
 			if (cnt > 100)
